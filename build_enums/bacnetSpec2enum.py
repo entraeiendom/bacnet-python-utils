@@ -2,11 +2,11 @@ import re
 str = open('spec_content.txt','r').read()
 replaced = re.sub(r"\n \(", "(", str)
 print(replaced)
-f = open("content_replaced.txt", "a")
+f = open("content_replaced.txt", "wx")
 f.write(replaced)
 f.close()
 
-camelCase = open('content_camelcase.txt','a')
+camelCase = open('content_camelcase.txt','wx')
 with open('content_replaced.txt', 'r') as reader:
     # reader = open('spec_content.txt')
     try:
