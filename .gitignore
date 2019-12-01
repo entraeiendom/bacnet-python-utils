@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# ide
+.idea
+
+# Project spesifics
+build_enums/content_camelcase.txt
+build_enums/content_replaced.txt
